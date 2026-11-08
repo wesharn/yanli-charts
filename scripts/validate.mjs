@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const requiredColorTemplates = [
-  'templates/color/README.md',
+  'templates/color/README1.md',
   'templates/color/basics-palm.html',
   'templates/color/basics-porcelain.html',
   'templates/color/basics-wire.html',
@@ -26,7 +26,7 @@ const requiredColorTemplates = [
   'templates/color/maps-wire.html',
 ];
 const required = [
-  'README.md',
+  'README1.md',
   'LICENSE',
   'SKILL.md',
   'catalog.md',
