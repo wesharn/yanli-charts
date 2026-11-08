@@ -1,4 +1,4 @@
-# Lieflat Charts 演示版式目录
+# yl-charts 演示版式目录
 
 演示模式（Presentation Mode）是第三种输出模式，和单张图表、整页报告并列。它只规定整套演示的画布、阅读节奏和页面骨架，不规定每一页必须使用哪一种图。用户提供的 PPT、截图或 HTML 只作为排版参考，不是数据来源，也不能决定图型。页内图表仍从 [`catalog.md`](catalog.md) 按用户数据形状选择，并复用对应 gallery 的真实实现；整套演示的色系同样按数据语义锁定——Mono，或 porcelain / palm / wire 三套彩色预设之一，详见文末「现成模板」。
 

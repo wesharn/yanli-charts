@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231C1C1A'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23F0EFEB'/%3E%3C/svg%3E">
-  <title>Research Brief Card — Lieflat Report Template · Mono Fixed Frame</title>
+  <title>Research Brief Card — yanli Report Template · Mono Fixed Frame</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/echarts@6/dist/echarts.min.js"></script>
   <style>
     /* ═══════════════════════════════════════════════════════════════
-       LIEFLAT 报告模板 11 · 研究简报卡（灰阶定尺）· 英文版
+       yanli 报告模板 11 · 研究简报卡（灰阶定尺）· 英文版
        场景：600×1000 定宽定高卡片，专为截图发社媒设计——单一决定性
              结论 + 两张证据图 + 一条 takeaway，读者三秒扫完，不响应式
              重排，只整卡等比缩放（见页尾 fit() 脚本）。
@@ -47,12 +47,12 @@
   </style>
 </head>
 <body><div class="stage" id="stage"><main class="report"><div class="inner">
-  <header class="mast"><strong>Lieflat Charts / Mono</strong><span>Research brief · 01</span></header>
+  <header class="mast"><strong>yl-charts / Mono</strong><span>Research brief · 01</span></header>
   <section><h1>Skipping time off is becoming routine</h1><p class="dek">Why people skip earned leave, and what happens when they never disconnect.</p><p class="meta"><b>2026 SAMPLE</b><br>1,200 people · 4 markets<br>Demo</p></section>
   <section class="hero"><div class="hero-stat"><strong>68%</strong><span>of respondents delayed a planned vacation</span></div><div class="hero-copy"><h2>Work always looks more urgent than rest.</h2><p>When leave requires nonstop coordinating, handoffs, and explaining, it's easy to push it back.</p><div class="labels"><span>availability</span><span>guilt</span><span>handover</span></div></div></section>
   <section class="content"><div class="panel"><div class="panel-title"><h3>Average unused leave</h3><span>G3 · Chunky bars</span></div><div class="chart-wrap"><canvas id="leaveChart"></canvas></div><p class="note">A leave balance isn't rest capacity. The most unused days also mean the most trouble unplugging.</p></div><div class="panel"><div class="panel-title"><h3>Friction signals</h3><span>G18 · Draw-in</span></div><div class="signals"><div class="signal"><b>42%</b><span>still check messages while on leave</span></div><div class="signal"><b>37%</b><span>worry leave affects how others see them</span></div><div class="signal"><b>31%</b><span>cut leave short over handover costs</span></div><div class="signal"><b>26%</b><span>no 5 straight days off all year</span></div></div><div class="trend"><div class="trend-head"><span>Fatigue rises without a break</span><span class="fatigue-count"><b id="fatigueCount">0</b><small>/100</small></span></div><div class="trend-chart" id="stroke"></div></div></div></section>
   <section class="takeaway"><div class="takeaway-label">One-page takeaway</div><p>Policy grants leave. Habits decide who feels safe taking it. Make handover and logging off routine.</p></section>
-  <footer class="footer"><span><span class="demo">Demo data, not a real survey result.</span><br>Built to test the Lieflat Charts one-page research brief template.<br>Runs on Chart.js / ECharts, blank offline.</span><span>MONO / PAPER GREY<br>RESEARCH BRIEF</span></footer>
+  <footer class="footer"><span><span class="demo">Demo data, not a real survey result.</span><br>Built to test the yl-charts one-page research brief template.<br>Runs on Chart.js / ECharts, blank offline.</span><span>MONO / PAPER GREY<br>RESEARCH BRIEF</span></footer>
 </div></main></div><script>
 /* ── PALETTE：直接照抄 templates/glance-gallery.html 顶部同名常量，不新增色值 ── */
 const INK='#1C1C1A',PAPER='#F0EFEB',MUTED='#8F8E88',GRID='#DEDDD6',FAINT='#C6C5BF';

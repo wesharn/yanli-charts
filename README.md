@@ -1,10 +1,10 @@
-# Lieflat Charts
+# yl-charts
 
 中文 | [English](README.en.md)
 
-![Lieflat Charts：以统一的字体、留白、线条和动效建立自己的视觉语法的数据可视化 skill](docs/assets/readme-hero-zh.png)
+![yl-charts：以统一的字体、留白、线条和动效建立自己的视觉语法的数据可视化 skill](docs/assets/readme-hero-zh.png)
 
-Lieflat Charts 是一套遵循 Agent Skills 格式的数据可视化、PPT 演示与整页报告生成 skill，可供 Claude Code、Codex 及其他兼容 `SKILL.md` 的 AI agent 使用。本 skill 同时提供 PPT 模式和报告模式，但默认产出图表；用户明确要求一套 PPT、幻灯片或可翻页汇报时，才进入 PPT 模式，生成 HTML 或 PDF 格式的 PPT；用户明确要求报告、年报、月报、白皮书、海报或 brief 时，才生成整页 HTML 报告。
+yl-charts 是一套遵循 Agent Skills 格式的数据可视化、PPT 演示与整页报告生成 skill，可供 Claude Code、Codex 及其他兼容 `SKILL.md` 的 AI agent 使用。本 skill 同时提供 PPT 模式和报告模式，但默认产出图表；用户明确要求一套 PPT、幻灯片或可翻页汇报时，才进入 PPT 模式，生成 HTML 或 PDF 格式的 PPT；用户明确要求报告、年报、月报、白皮书、海报或 brief 时，才生成整页 HTML 报告。
 
 演示模式在用户明确要求做图表 PPT 后触发：Agent 选择合适的图表类型与色彩（Mono 或三套彩色预设），自动生成带入场动效、支持左右翻页的 HTML 格式 PPT；数据与图型仍根据用户材料确定。
 
@@ -78,7 +78,7 @@ Mono 黑白灰是稳定的保底方案，同时也有彩色模式，目前支持
 
 <p align="center"><img src="docs/assets/interactive-motion.gif" alt="Interactive 动态预览" width="82%"></p>
 
-[打开 Force Graph 模板体验拖拽与缩放](https://larashero3-dotcom.github.io/lieflat-charts/templates/big-force.html)
+[打开 Force Graph 模板体验拖拽与缩放](https://larashero3-dotcom.github.io/yanli-charts/templates/big-force.html)
 
 ## 增加了彩色模式
 
@@ -168,23 +168,23 @@ Mono 黑白灰是稳定的保底方案，同时也有彩色模式，目前支持
 一条命令安装：
 
 ```bash
-npx skills add https://github.com/larashero3-dotcom/lieflat-charts --skill lieflat-charts
+npx skills add https://github.com/wesharn/yanli-charts --skill yanli-charts
 ```
 
 也可以直接把这段话发给有 shell 权限的 AI Agent：
 
 ```text
-帮我安装 lieflat-charts。请把 https://github.com/larashero3-dotcom/lieflat-charts
-克隆到 ~/.claude/skills/lieflat-charts，安装完成后检查 SKILL.md、templates/、
+帮我安装 yanli-charts。请把 https://github.com/wesharn/yanli-charts
+克隆到 ~/.claude/skills/yanli-charts，安装完成后检查 SKILL.md、templates/、
 catalog.md 和 mono-tokens.js 是否存在。
 ```
 
-使用 Codex 时，将安装路径换成 `~/.codex/skills/lieflat-charts`。
+使用 Codex 时，将安装路径换成 `~/.codex/skills/yanli-charts`。
 
 已经安装过的话，用这段话更新：
 
 ```text
-帮我更新 lieflat-charts。请进入 ~/.claude/skills/lieflat-charts 执行 git pull，
+帮我更新 yanli-charts。请进入 ~/.claude/skills/yanli-charts 执行 git pull，
 然后告诉我当前最新 commit。
 ```
 
@@ -198,7 +198,7 @@ catalog.md 和 mono-tokens.js 是否存在。
 也可以试这些请求：
 
 ```text
-帮我用 lieflat charts 给这些数据做个彩色风格的图表。
+帮我用 yl-charts 给这些数据做个彩色风格的图表。
 ```
 
 ```text
@@ -223,12 +223,11 @@ catalog.md 和 mono-tokens.js 是否存在。
 
 图数由独立结论决定：单个问题通常 1 张，两个到三个结论 2–3 张，完整文章或论文 4–6 张，单页默认最多 6 张。用户明确指定数量时会遵守，但不会为了凑数重复表达同一个结论。
 
-## 关注躺在废墟里
+## 
 
-欢迎在小红书、抖音、Bilibili、公众号、视频号和 X 关注我：**躺在废墟里**。
 
 <p align="center">
-  <img src="docs/assets/author-profile.jpg" alt="躺在废墟里个人主页" width="420">
+  <img src="docs/assets/author-profile.jpg" alt="主页" width="420">
 </p>
 
 ## Templates
@@ -263,7 +262,7 @@ catalog.md 和 mono-tokens.js 是否存在。
 
 所有体系共享一套 Mono 视觉语法：纸灰与炭黑两极，加上中间灰阶；明度承担层级，位置、长度、密度和结构承担数据编码。三套彩色预设提供稳定的配色起点；用户明确给出品牌色时，也可以建立角色完整、对比度合格的 custom 色板。继续调色时，仍需保证视觉主次和数据含义清楚。创新不在于再发明一种孤立图型，而在于把图型选择、编辑排版、浏览器交互和整页叙事放进同一个可复用的 skill。
 
-因此，Lieflat Charts 和过去直接做 charts 的差别，不只是“换了颜色”：
+因此，yl-charts 和过去直接做 charts 的差别，不只是“换了颜色”：
 
 - 先判断数据契约，再选图型，而不是先挑一个库内模板
 - 每张图先承担一个独立结论，再组成整页，而不是把所有字段都画上去

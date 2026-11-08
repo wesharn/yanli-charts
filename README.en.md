@@ -1,10 +1,10 @@
-# Lieflat Charts
+# yl-charts
 
 [中文](README.md) | English
 
-![Lieflat Charts: a data visualization skill with its own visual language](docs/assets/readme-hero-en.png)
+![yl-charts: a data visualization skill with its own visual language](docs/assets/readme-hero-en.png)
 
-Lieflat Charts is an Agent Skills-compatible skill for data visualization, slide decks, and full-page reports. It works with Claude Code, Codex, and other AI agents that support `SKILL.md`. It provides both Presentation Mode and Report Mode but defaults to charts. Explicit slide-deck requests produce an HTML or PDF deck; explicit report, annual report, monthly report, white paper, poster, or brief requests produce a full-page HTML report.
+yl-charts is an Agent Skills-compatible skill for data visualization, slide decks, and full-page reports. It works with Claude Code, Codex, and other AI agents that support `SKILL.md`. It provides both Presentation Mode and Report Mode but defaults to charts. Explicit slide-deck requests produce an HTML or PDF deck; explicit report, annual report, monthly report, white paper, poster, or brief requests produce a full-page HTML report.
 
 Presentation Mode activates when the user explicitly asks for a chart deck: the agent picks the right chart types and a color system (Mono or one of the three color presets), then generates an HTML deck with entrance animations and left/right keyboard navigation; data and chart choices still come from the user’s materials.
 
@@ -78,7 +78,7 @@ Motion preview:
 
 <p align="center"><img src="docs/assets/interactive-motion.gif" alt="Interactive visualization preview" width="82%"></p>
 
-[Open the Force Graph template to try dragging and zooming](https://larashero3-dotcom.github.io/lieflat-charts/templates/big-force.html)
+[Open the Force Graph template to try dragging and zooming](https://larashero3-dotcom.github.io/yanli-charts/templates/big-force.html)
 
 ## Added Color Mode
 
@@ -157,7 +157,7 @@ Plus the Mono base pair: [`presentation.en.html`](templates/presentations/presen
 
 ### Added Report Mode
 
-Lieflat Charts can now generate complete HTML reports in addition to individual charts. The 12 full-page templates are available in Chinese and English for research reports, research briefs, business data reports, financial and economic analysis, product records, dashboards, posters, and personal datasets such as sports, travel, and yearly life logs. Template names describe the layout's character, not a hard use-case restriction; the same layout can move across report types when the information structure fits.
+yl-charts can now generate complete HTML reports in addition to individual charts. The 12 full-page templates are available in Chinese and English for research reports, research briefs, business data reports, financial and economic analysis, product records, dashboards, posters, and personal datasets such as sports, travel, and yearly life logs. Template names describe the layout's character, not a hard use-case restriction; the same layout can move across report types when the information structure fits.
 
 Report mode keeps chart selection data-driven; browse the report templates in [`report-catalog.md`](report-catalog.md) and [`templates/reports/index.html`](templates/reports/index.html).
 
@@ -168,23 +168,23 @@ Report mode keeps chart selection data-driven; browse the report templates in [`
 Install with one command:
 
 ```bash
-npx skills add https://github.com/larashero3-dotcom/lieflat-charts --skill lieflat-charts
+npx skills add https://github.com/wesharn/yanli-charts --skill yanli-charts
 ```
 
 You can also send the following instruction to an AI agent with shell access:
 
 ```text
-Install lieflat-charts. Clone https://github.com/larashero3-dotcom/lieflat-charts
-to ~/.claude/skills/lieflat-charts, then verify that SKILL.md, templates/,
+Install yanli-charts. Clone https://github.com/wesharn/yanli-charts
+to ~/.claude/skills/yanli-charts, then verify that SKILL.md, templates/,
 catalog.md, and mono-tokens.js are present.
 ```
 
-For Codex, replace the installation path with `~/.codex/skills/lieflat-charts`.
+For Codex, replace the installation path with `~/.codex/skills/yanli-charts`.
 
 To update an existing installation:
 
 ```text
-Update lieflat-charts. Enter ~/.claude/skills/lieflat-charts, run git pull,
+Update yanli-charts. Enter ~/.claude/skills/yanli-charts, run git pull,
 and report the latest commit.
 ```
 
@@ -198,7 +198,7 @@ Compare Lupi Editorial and Lupi Basics first. Use Glance only if neither group f
 More prompt examples:
 
 ```text
-Use lieflat-charts to turn this dataset into a color chart.
+Use yanli-charts to turn this dataset into a color chart.
 ```
 
 ```text
@@ -255,7 +255,7 @@ Interactive templates handle relationship data that ordinary static charts canno
 
 Every family shares the same core visual language: paper gray and charcoal at the extremes, a controlled grayscale ladder between them, and data encoded through lightness, position, length, density, and structure. The three color presets provide stable starting points. Explicit brand colors can also become one role-based custom palette. When users refine the palette, contrast, hierarchy, and data meaning still need to remain clear.
 
-Lieflat Charts differs from a conventional chart generator in more than color:
+yl-charts differs from a conventional chart generator in more than color:
 
 - It identifies the data contract before choosing a chart.
 - Each chart carries one independent conclusion before charts are assembled into a page.

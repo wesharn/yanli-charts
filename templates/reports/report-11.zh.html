@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231C1C1A'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23F0EFEB'/%3E%3C/svg%3E">
-  <title>Mono Research Brief · Lieflat Charts</title>
+  <title>Mono Research Brief · yl-charts</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/echarts@6/dist/echarts.min.js"></script>
   <style>
     /* ═══════════════════════════════════════════════════════════════
-       LIEFLAT 报告模板 11 · 研究简报卡（灰阶定尺）
+       yanli 报告模板 11 · 研究简报卡（灰阶定尺）
        场景：600×1000 定宽定高卡片，专为截图发社媒设计——单一决定性
              结论 + 两张证据图 + 一条 takeaway，读者三秒扫完，不响应式
              重排，只整卡等比缩放（见页尾 fit() 脚本）。
@@ -45,12 +45,12 @@
   </style>
 </head>
 <body><div class="stage" id="stage"><main class="report"><div class="inner">
-  <header class="mast"><strong>Lieflat Charts / Mono</strong><span>Research brief · 01</span></header>
+  <header class="mast"><strong>yl-charts / Mono</strong><span>Research brief · 01</span></header>
   <section><h1>休假不足，正在变成一种工作习惯</h1><p class="dek">一页看懂：人们为什么有假不休，以及长时间不离开工作会发生什么。</p><p class="meta"><b>2026 SAMPLE</b><br>1,200 人 · 四个市场<br>演示版</p></section>
   <section class="hero"><div class="hero-stat"><strong>68%</strong><span>受访者至少推迟过一次原定休假</span></div><div class="hero-copy"><h2>真正的障碍不是“没有假”，而是工作永远看起来比休息更紧急。</h2><p>当休假需要反复协调、交接和解释，员工更容易把它推迟到“忙完这阵”。</p><div class="labels"><span>availability</span><span>guilt</span><span>handover</span></div></div></section>
   <section class="content"><div class="panel"><div class="panel-title"><h3>平均未使用休假天数</h3><span>G3 · Chunky bars</span></div><div class="chart-wrap"><canvas id="leaveChart"></canvas></div><p class="note">假期余额不等于休息能力。未使用天数最高的群体，也最常报告“离开后工作会失控”。</p></div><div class="panel"><div class="panel-title"><h3>四个阻力信号</h3><span>G18 · Draw-in</span></div><div class="signals"><div class="signal"><b>42%</b><span>休假时仍频繁查看工作消息</span></div><div class="signal"><b>37%</b><span>担心休假影响他人评价</span></div><div class="signal"><b>31%</b><span>因为交接成本而缩短假期</span></div><div class="signal"><b>26%</b><span>过去一年未连续休满五天</span></div></div><div class="trend"><div class="trend-head"><span>离上次完整休假越久，疲惫感越高</span><span class="fatigue-count"><b id="fatigueCount">0</b><small>/100</small></span></div><div class="trend-chart" id="stroke"></div></div></div></section>
   <section class="takeaway"><div class="takeaway-label">One-page takeaway</div><p>休假政策只解决“有没有”，团队习惯决定“敢不敢休”。真正有效的改善，是让交接和离线成为默认流程。</p></section>
-  <footer class="footer"><span><span class="demo">演示数据，不代表真实调查结果。</span><br>用于验证 Lieflat Charts 一页研究简报模板。<br>图表挂 Chart.js / ECharts，离线打开为空白。</span><span>MONO / PAPER GREY<br>RESEARCH BRIEF</span></footer>
+  <footer class="footer"><span><span class="demo">演示数据，不代表真实调查结果。</span><br>用于验证 yl-charts 一页研究简报模板。<br>图表挂 Chart.js / ECharts，离线打开为空白。</span><span>MONO / PAPER GREY<br>RESEARCH BRIEF</span></footer>
 </div></main></div><script>
 /* ── PALETTE：直接照抄 templates/glance-gallery.html 顶部同名常量，不新增色值 ── */
 const INK='#1C1C1A',PAPER='#F0EFEB',MUTED='#8F8E88',GRID='#DEDDD6',FAINT='#C6C5BF';

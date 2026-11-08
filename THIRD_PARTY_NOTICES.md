@@ -1,6 +1,6 @@
 # 第三方依赖说明
 
-Lieflat Charts 的部分模板会在浏览器中加载以下第三方项目。它们不受本仓库的 PolyForm Noncommercial License 约束，仍分别遵循自己的许可证。
+yl-charts 的部分模板会在浏览器中加载以下第三方项目。它们不受本仓库的 PolyForm Noncommercial License 约束，仍分别遵循自己的许可证。
 
 | 项目 | 用途 | 许可证 |
 |---|---|---|
